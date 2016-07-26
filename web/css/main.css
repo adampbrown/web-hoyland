@@ -270,7 +270,11 @@ section {
 }
 
 .logo h1 {
-    color: white
+    color: #fff;
+}
+
+.splash {
+    color: #fff;
 }
 
 /*************************
