@@ -3,9 +3,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
     <meta name="author" content="">
-    <title>Darren Keith Hoyland Ltd</title>
+    <meta name="Description"
+          content="DK Hoyland - friendly and reputable builders in Sheffield and South Yorkshire. 
+            Call us on 0114 3218696 for a quote on any building, roofing and driveway services." />
+    <title>Darren Keith Hoyland - Quality Sheffield Builders</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/animate.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
@@ -95,7 +97,7 @@
                     <div class="text-center col-sm-8 col-sm-offset-2">
                         <h2>Our Services</h2>
                         <p>We offer a wide range of services from roofing, building maintenance & repairs, windows, fascias, soffits and all types of building work.</p>
-                        <p>We also offer a Resin Driveway service to all our customers, please feel free to call us and we will be happy to assist you with any information or quotes you require.</p>
+                        <p>We also offer a Resin Driveway service to all our customers so please please contact us for a quote.</p>
                     </div>
                 </div>
             </div>
@@ -523,8 +525,8 @@
                         <div class="col-sm-6">
                             <div class="contact-info wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
                                 <ul class="address">
-                                    <li><i class="fa fa-map-marker"></i> <span> Address:</span> 3 Park Avenue, Sheffield, S35 1WH </li>
-                                    <li><i class="fa fa-phone"></i> <span> Phone:</span> 0114 3218696  </li>
+                                    <li><i class="fa fa-map-marker"></i> <span itemprop="streetAddress"> Address: 3 Park Avenue, Sheffield, S35 1WH</span> </li>
+                                    <li><i class="fa fa-phone"></i> <span> Phone:</span> 0114 3218696 </li>
                                     <li><i class="fa fa-envelope"></i> <span> Email:</span><a href="mailto:someone@yoursite.com"> darren@test.com</a></li>
                                 </ul>
                             </div>
@@ -537,11 +539,12 @@
     <footer id="footer">
         <div class="footer-top wow fadeInUp" data-wow-duration="1000ms" data-wow-delay="300ms">
             <div class="container text-center">
-                <div class="footer-logo">
-                    <!--<a href="index.html"><img class="img-responsive" src="images/logo.png" alt=""></a>-->
+                <!--<div class="footer-logo">
+                    <a href="index.html"><img class="img-responsive" src="images/logo.png" alt=""></a>
                     <div class="logo">
-                        <img src="images/logo-sm.jpg" alt="DK Hoyland logo" /><h1>Darren Keith Hoyland Ltd</h1></div>
-                </div>
+                        <img src="images/logo-sm.jpg" alt="DK Hoyland logo" />
+                    </div>
+                </div>-->
                 <div class="social-icons">
                     <ul>
                         <!--<li><a class="envelope" href="#"><i class="fa fa-envelope"></i></a></li>-->
@@ -557,8 +560,24 @@
         <div class="footer-bottom">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-6">
-                        <p>&copy; 2016 Darren Keith Hoyland Ltd.</p>
+                    <div class="col-sm-9">
+                        <div itemscope="" itemtype="http://schema.org/LocalBusiness">
+                            &copy; 2016 <span itemprop="name">Darren Keith Hoyland Ltd. Registered in England company number 09030486.</span>
+                            <div itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
+                                <i class="fa fa-map-marker"></i><span itemprop="streetAddress"> 3 Park Avenue</span>,
+                                <span itemprop="addressLocality">Sheffield</span>,
+                                <span itemprop="addressRegion">South Yorkshire</span>,
+                                <span itemprop="postalCode">S35 1WH</span>,
+                                <span itemprop="addressCountry">United Kingdom</span> |
+                                <i class="fa fa-phone"></i><span itemprop="telephone"> 0114 3218696</span> |
+                                <i class="fa fa-envelope"></i><a href="mailto:test@dkhoyland.co.uk" itemprop="email"> test@dkhoyland.co.uk</a>.
+                            </div>
+
+                            <span itemprop="geo" itemscope="" itemtype="http://schema.org/GeoCoordinates">
+                                <meta itemprop="latitude" content="53.4560596">
+                                <meta itemprop="longitude" content="-1.4727009">
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>
