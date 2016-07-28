@@ -1,0 +1,43 @@
+[
+  {
+    "outputFileName": "css/main.min.css",
+    "inputFiles": [
+      "css/main.css"
+    ]
+  },
+  {
+    "outputFileName": "css/responsive.min.css",
+    "inputFiles": [
+      "css/responsive.css"
+    ]
+  },
+  {
+    "outputFileName": "css/presets/preset.min.css",
+    "inputFiles": [
+      "css/presets/preset.css"
+    ]
+  },
+  {
+    "outputFileName": "css/lightbox.min.css",
+    "inputFiles": [
+      "css/lightbox.css"
+    ]
+  },
+  {
+    "outputFileName": "css/bundles/site-bundle.css",
+    "inputFiles": [
+      "css/presets/preset.css",
+      "css/main.css",
+      "css/responsive.css"
+    ]
+  },
+  {
+    "outputFileName": "css/bundles/lib-bundle.css",
+    "inputFiles": [
+      "css/animate.min.css",
+      "css/bootstrap.min.css",
+      "css/font-awesome.min.css",
+      "css/lightbox.css"
+    ]
+  }
+]
