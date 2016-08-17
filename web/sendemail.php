@@ -5,7 +5,7 @@ $email = @trim(stripslashes($_POST["email"]));
 $subject = @trim(stripslashes($_POST["subject"])); 
 $message = @trim(stripslashes($_POST["message"])); 
 
-$headers = "From: $name \r\n";
+$headers = "From: $name <$email> \r\n";
 $headers .= "Reply-To: $email \r\n";
 
 echo mail("darren@dkhoyland.co.uk", $subject, $message, $headers);
