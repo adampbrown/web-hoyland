@@ -126,11 +126,21 @@ jQuery(function($) {
 		var form_status = $('<div class="form_status"></div>');
 		$.ajax({
 			url: $(this).attr('action'),
+			type:'POST',
+            data: {
+                name: $('#name').val(),
+                email: $('#email').val(),
+                subject: $('#subject').val(),
+                message: $('#message').val()
+            },
 			beforeSend: function(){
 				form.prepend( form_status.html('<p><i class="fa fa-spinner fa-spin"></i> Email is sending...</p>').fadeIn() );
 			}
 		}).done(function(data){
-			form_status.html('<p class="text-success">Thank you for contact us. As early as possible  we will contact you</p>').delay(3000).fadeOut();
+			form_status.html('<p class="text-success">Thanks for contacting us. We will get back to you as soon as possible!</p>').delay(3000).fadeOut();
+		}).fail(function(err) {
+			console.log("Sending email failed " + err.statusText);
+			form_status.html('<p class="text-danger">Opps! Something went wrong, but please contact us via email or give us a call.</p>').delay(5000).fadeOut();
 		});
 	});
 
