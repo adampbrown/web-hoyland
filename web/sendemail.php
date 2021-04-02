@@ -8,7 +8,7 @@ $message = @trim(stripslashes($_POST["message"]));
 $headers = "From: $name <$email> \r\n";
 $headers .= "Reply-To: $email \r\n";
 
-echo mail("darren@dkhoyland.co.uk", $subject, $message, $headers);
+echo mail("darrenkeithhoyland@yahoo.co.uk", $subject, $message, $headers);
 
 die;
 
